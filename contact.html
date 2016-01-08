@@ -21,7 +21,7 @@
 
 <nav id="menu">
 <ul>
-<li><a href="Index.html">Accueil</a></li>
+<li><a href="index.html">Accueil</a></li>
 <li>
 <a href="performances.html">Performances</a>
 <ul>
@@ -39,41 +39,35 @@
 <section>
 
                
-<h1>Formulaire de Contact</h1>
+<h1>Contact Form</h1>
 
-<form method="post" action="traitement.php">
+<form method="post" Enctype="text/plain" action="mailto:mathildenavet@hotmail.com">
 <p>
-<label for="statut">Vous êtes?</label></br>
+<fieldset>
+<label for="statut">You are?</label></br>
 <select name="statut" id="statut">
-<option value="particuliers">Un particuliers</option>
-<option value="scolaires">Une école</option>
-<option value="groupes">Un groupe</option>
-<option value="entreprisesCE">Une entreprise Ou un Comité d'entreprise</option>
+<option value="particuliers">Individuals</option>
+<option value="scolaires">School</option>
+<option value="groupes">Group</option>
+<option value="entreprisesCE">A company, A works council</option>
+</fieldset>
 </select>
 
 <fieldset>
 <legend>Vos Coordonnées</legend>
-<label for="nom">Nom :</label>
-        <input type="text" id="nom"required/></br>
-<label for="prenom">Prénom</label>
-		<input type="text" id="prénom"/></br>
-<label for="adresse">Adresse</label>
-		<input type="text" id="adresse"required/></br>
-<label for="code postal">Code postal</label>
-		<input type="postcode" id="codepostal"required/></br>
-<label for="ville">Ville</label>
-		<input type="text" id="ville"required/></br>
-<label for="email">Email</label>
-		<input type="email" id="email"required/></br>
-<label for="Téléphone">Numéro de téléphone</label>
-		<input type="tel" id="telephone"/></br>
+Name: <input name=nom></br>
+First Name: <input name=prenom></br>
+Address: <input name=adresse></br>
+Postal Code: <input name=codepostal></br>
+City: <input name=ville></br>
+Mail: <input name=email></br>
+Phone: <input name=telephone></br>
 </fieldset>
 
 <fieldset>
-<legend>Votre Demande</legend>
-<label for="message">Message :</label>
-        <textarea id="message"required></textarea>
-</fieldset>
+<legend>Your Message</legend>
+Message: <textarea name=message></textarea>
+</fieldset></br>
 <input type="submit" value="Envoyer"/>
 </p>
 </form>
@@ -86,7 +80,7 @@
 
 <footer>
 <div id="pieddepage">
-<p class="email"><a href="mailto:"mathildenavet@hotmail.com">Contact</a></p>
+
 </div>
 </footer>
 </div>
