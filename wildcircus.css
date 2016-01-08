@@ -213,6 +213,7 @@ aside
 	border-style: dotted;
 	border-color: red;
 	border-width: 2px;
+	padding-bottom: 15px;
 }
 
 
@@ -284,8 +285,7 @@ form {
 }
 
 input{
-    /* Afin de s'assurer que tous les champs textuels utilisent la même police
-       Par défaut, textarea utilise une police à espacement constant */
+    
     font:sans-serif;
 
     /* Pour donner la même dimension à tous les champs textuels */
@@ -298,8 +298,7 @@ input{
 }
 
 textarea {
-    /* Afin de s'assurer que tous les champs textuels utilisent la même police
-       Par défaut, textarea utilise une police à espacement constant */
+   
     font:sans-serif;
 
     /* Pour donner la même dimension à tous les champs textuels */
@@ -310,3 +309,32 @@ textarea {
     /* Pour harmoniser l'apparence des bordures des champs textuels */
     border: 1px solid #999;
 }
+
+a.button{
+	background-color: #dcdcdc;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px 10px 0 0;
+	padding: 10px;
+	padding-bottom: 10px;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	border-radius: 15px;
+	float: center;
+	
+}
+
+@media all and (max-device-width:1024px)
+{header
+	{display:none;}
+aside p: last-child
+{text-align: center;}
+#bloc_page
+{width:auto;}
+}
+
